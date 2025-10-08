@@ -1,0 +1,18 @@
+on: push
+
+jobs:
+
+    job1-hellob:
+      runs-on: ubuntu-latest
+      steps:
+        - name: Imprimir mensagem
+          run: echo "Olá, mundo!"
+    job2-goodbye:
+      runs-on: ubuntu-latest
+      steps:
+        - name: Step 1 - Sequencia de instruções
+          run: |
+            echo "Uma noova instruções"
+            ls
+        - name: Imprimir mensagem de despedida
+          run: echo "Até logo!"
